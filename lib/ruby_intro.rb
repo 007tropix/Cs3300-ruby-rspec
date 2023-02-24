@@ -32,7 +32,7 @@ def sum_to_n? arr, n
   # add every combination of numbers in array and check if equal to n
   for i in 0 ... arr.size
     for j in 0 ... arr.size
-      if (arr[i] != arr[j] and arr[i] + arr[j] == n)
+      if (i != j and arr[i] + arr[j] == n)
         return true
       end
     end
